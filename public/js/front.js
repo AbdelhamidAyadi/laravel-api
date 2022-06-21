@@ -2536,7 +2536,7 @@ var render = function () {
             _vm._v(" "),
             _c("td", [
               _c("img", {
-                staticStyle: { "border-radius": "5px" },
+                staticStyle: { "border-radius": "4px" },
                 attrs: { src: "" + post.image, width: "50px;" },
               }),
             ]),

@@ -14,7 +14,7 @@
     <tr v-for="post in posts" :key="post.id">
       <th scope="row">{{ post.id }}</th>
       <td>{{ post.title }}</td>
-      <td> <img :src="`${post.image}`" width="50px;" style="border-radius: 5px;"> </td>
+      <td> <img :src="`${post.image}`" width="50px;" style="border-radius: 4px;"> </td>
       <td>{{ post.category.name }}</td>
       
     </tr>
