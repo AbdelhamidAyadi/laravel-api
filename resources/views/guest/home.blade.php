@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Styles -->
         <style>
             html, body {
@@ -20,9 +20,7 @@
                 margin: 0;
             }
 
-            .full-height {
-                height: 100vh;
-            }
+            
 
             .flex-center {
                 align-items: center;
@@ -32,6 +30,7 @@
 
             .position-ref {
                 position: relative;
+                margin-bottom: 50px;
             }
 
             .top-right {
@@ -40,9 +39,7 @@
                 top: 18px;
             }
 
-            .content {
-                text-align: center;
-            }
+            
 
             .title {
                 font-size: 84px;
@@ -64,7 +61,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref ">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -79,10 +76,12 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div id="root"></div>
-            </div>
+            
+        </div>
+        <div>
+            <div id="root"></div>
         </div>
         <script src="{{ asset('js/front.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

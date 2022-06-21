@@ -1,8 +1,8 @@
 <template>
     <header>
-        <h1>
-            Welcome
-        </h1>
+        <h2>
+            Posts:
+        </h2>
     </header>
 </template>
 <script>
